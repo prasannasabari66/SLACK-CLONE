@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="login-section">
+        <div class="main-div">
+            <div class="inner-div1">
+                <div class="img-div">
+                    <img src="images/Screenshot 2024-08-11 195157.png" alt="front-wallpaper">
+                </div>
+                <div class="inner-div2">
+                    <div class="signin-div">
+                        <div >
+                            <h3 class="login-title">Login</h3>
+                            <p class="login-info">Doesn't have an account yet? <a href="#Sign-up" onclick="clicksignup()">Sign Up</a></p>
+                        </div>
+                        <div class="content-div">
+                            <label for="email" class="lb-email">Email Address </label>
+                            <input id="email" class="sign-email" value="" type="email" onchange="changehandle(event , 'email')"
+                                placeholder="you@example.com">
+                            <label class="lb-password" for="password">Password</label>
+                            <a href="">Forget Password</a>
+                            <input id="password"  class="sign-password" type="password" onchange="changehandle(event, 'password')"
+                                placeholder="Enter 6 characters or more">
+                            <input class="checkbox" type="checkbox">
+                            <p class="checkbox-content">Remember me</p>
+                            <button id="login" class="login-button" onclick="clickhandle()" type="button">LOGIN</button>
+                            <p class="of-login">of login with</p>
+                        </div>
+                        <div class="buttons-div">
+                            <button class="google" type="button"><i class="fa fa-google "
+                                    aria-hidden="true"></i>Google</button>
+                            <button class="facebook" type="button"><i class="fa fa-facebook"
+                                    aria-hidden="true"></i>facebook</button>
+                        </div>
+                    </div>
+                    <div class="form-div">
+                        <div>
+                            <h1 class="form-head">Sign-Up</h1>
+                        </div>
+                        <form class="form-tag">
+                            <label for="Username" class="lb-reg">Username</label>
+                            <input onchange="reghandler(event,'username')" id="Username" class="in-reg" type="text" placeholder="example2454">
+                            <label for="emailaddress"  class="lb-reg">Email Address</label>
+                            <input  onchange="reghandler(event,'email')" id="emailaddress" class="in-reg" type="email" placeholder="example@email.com">
+                            <label for="passwordfield" class="lb-reg">Password</label>
+                            <input  onchange="reghandler(event,'password')" id="passwordfield" class="in-reg" type="password">
+                            <label for="Mobile" class="lb-reg">Mobile</label>
+                            <input  onchange="reghandler(event,'mobile')" id="Mobile" class="in-reg" type="number">
+                            <div class="loader"></div>
+                            <button type="button" class="reg-button" onclick="clickregister()">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <div class="loader1"></div>
+    <script src="login.js" type="text/javascript"></script>
+</body>
+
+</html>
